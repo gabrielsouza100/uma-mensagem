@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Frase Cósmica do Dia ✨</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #fde7ff, #e0f2ff);
+    font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container {
+    background: rgba(255,255,255,0.85);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    max-width: 420px;
+}
+h1 {
+    font-size: 26px;
+}
+button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background: #ff7eb9;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background: #ff5fa2;
+}
+#frase {
+    margin-top: 30px;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Para quando o seu dia pesar:</h1>
+    <button onclick="sortearFrase()">Uma mensagem gentil do universo para minha estrela favorita ✨</button>
+    <div id="frase"></div>
+</div>
+
+<script>
+const frases = [
+"Que seu dia seja mais lindo que mil nasceres do sol.",
+"Que seu dia seja tão incrível quanto um abraço quentinho em um planeta gelado.",
+"Desejo um dia tão perfeito quanto uma playlist sem anúncios!",
+"Que hoje você brilhe mais que todas as estrelas de todas as galáxias combinadas.",
+"Espero que seu dia seja tão bom que nem um universo inteiro de coisas boas consiga competir.",
+"Que seu dia seja mais doce que poeira estelar com açúcar.",
+"Que o universo hoje conspire inteiramente a favor do seu sorriso.",
+"Que seu dia seja leve como gravidade zero cheia de carinho.",
+"Que cada segundo hoje seja um pedacinho de felicidade cósmica.",
+"Que o sol acorde inspirado só pra te iluminar melhor hoje.",
+"Que seu dia seja mais quentinho que abraço de estrela anã.",
+"Que até os planetas hoje girem mais felizes por sua causa.",
+"Que seu dia tenha mais brilho que supernova em festa.",
+"Que o cosmos te entregue só boas surpresas hoje.",
+"Que seu dia seja perfeito até nos detalhes invisíveis.",
+"Que o universo inteiro pause só pra te desejar coisas boas.",
+"Que seu sorriso hoje seja a oitava maravilha do multiverso.",
+"Que seu dia seja um espetáculo digno das estrelas.",
+"Que tudo hoje aconteça no ritmo perfeito do seu coração.",
+"Que o espaço-tempo hoje seja gentil com você.",
+"Que seu dia seja mais bonito que aurora em mil planetas.",
+"Que cada pensamento seu hoje vire coisa boa.",
+"Que o universo te mime sem moderação hoje.",
+"Que seu dia seja tão bom que vire lembrança feliz.",
+"Que até o vento hoje te trate com carinho.",
+"Que seu dia seja um abraço contínuo do cosmos.",
+"Você foi a melhor coisa que me aconteceu.",
+"Que hoje a realidade sorria pra você.",
+"Que seu dia seja mágico do começo ao fim.",
+"Que o universo hoje te chame de obra-prima.",
+"De todas as estrelas nesse vasto universo, você é a mais bela que já encontrei.",
+"Se hoje estiver pesado, lembre-se: você não precisa dar conta de tudo agora.",
+"Alguns dias só pedem silêncio, descanso e gentileza consigo mesma.",
+"Não é fraqueza desacelerar. Às vezes, é exatamente o que salva.",
+"Mesmo nos dias nublados, você continua sendo suficiente.",
+"Respire, bobinha. Nem tudo precisa ser resolvido hoje, ok?",
+"Está tudo bem não estar bem.",
+"Você não está sozinha em sentir o que sente, mesmo que pareça.",
+"Que este pequeno texto seja um lembrete de calma, não de pressa.",
+"Dias difíceis não apagam quem você é. Simplesmente fantastica.",
+"Faça o melhor que puder — e isso já é mais do que o bastante.",
+"BRAGUE! Ou... bagre?",
+"Que hoje o universo seja gentil com o seu coração.",
+"Mesmo em dias cinzas, você ainda é, e sempre será, a cor.",
+"Que você se sinta acolhida, nem que seja por alguns segundos.",
+"Mesmo longe, o desejo aqui é que você fique bem.",
+"Você é mais forte e mais doce do que imagina.",
+"Que seu dia seja simplesmente incrível, porque você é."
+];
+
+function sortearFrase() {
+    const indice = Math.floor(Math.random() * frases.length);
+    document.getElementById("frase").innerText = frases[indice];
+}
+</script>
+
+</body>
+</html>
